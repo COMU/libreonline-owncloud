@@ -1,5 +1,9 @@
 LibreOnline-ownCloud
 ===================
+
+This project built on top of [libreoffice online](https://github.com/libreoffice/online) and most of the work provided by [Collabora](https://www.collabora.com/) and its developers. https://www.collaboraoffice.com/try-collabora-cloudsuite/
+
+
 The project still on the **development** stage but the current state is already satisfactory for the most of the fundamental needs but biggest handicap about the project is installing and using it might be trouble for the end-users. 
 
 Supported file formats are .xls, .ppt, .odt, .doc, and .docx and more...
