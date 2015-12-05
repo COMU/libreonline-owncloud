@@ -8,7 +8,6 @@
     <licence>MPLv2/LGPLv3+</licence>
     <require>8.0</require>
     <author>Ozcan Esen, Faruk Uzun</author>
-    <shipped>true</shipped>
     <default_enable/>
     <ocsid></ocsid>
 
