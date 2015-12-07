@@ -42,8 +42,7 @@ class ApiController extends Controller {
 	public function saveFile($ip, $port, $jail, $dir, $name, $target) {
 
 		$url = "http://$ip:$port/$jail/$dir/$name";
-		//FIXME: We should use owncloud api here.
-		file_put_contents("/var/www/owncloud/data/" . $this->userId . "/files$target", file_get_contents($url));
+		file_put_contents(\OC::$SERVERROOT . "/data/" . $this->userId . "/files$target", file_get_contents($url));
 	}
 
 
@@ -57,8 +56,7 @@ class ApiController extends Controller {
 		$url = sha1($file . mt_rand());
 		$app_path = \OC_App::getAppPath("libreonline");
 		$tmp_path = $app_path . '/tmp';
-		//FIXME: We should use owncloud api here.
-		copy("/var/www/owncloud/data/" . $this->userId . "/files$file", "$tmp_path/$url");
+		copy(\OC::$SERVERROOT . "/data/" . $this->userId . "/files$file", "$tmp_path/$url");
 		$uri = \OC_App::getAppWebPath('libreonline') . "/tmp/$url";
 		return $uri;
 	}
