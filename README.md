@@ -1,3 +1,5 @@
+**This repository is obsolete, please use upstream [RichDocuments](https://github.com/owncloud/richdocuments) application.**
+
 LibreOnline-ownCloud
 ===================
 
